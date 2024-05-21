@@ -16,7 +16,9 @@ use App\Http\Controllers\DashboardUser;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landingpage');
 });
 
 Route::get('/dashboard', [DashboardUser::class, 'Dashboardpage'])->name('dashboard');
+Route::get('/login', [LoginUser::class, 'LoginPage'])->name('login');
+Route::get('/landingpage', [landingpage::class, 'landingpageuser'])->name('landingpage');

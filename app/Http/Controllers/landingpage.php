@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DashboardUser extends Controller
+class landingpageuser extends Controller
 {
     public function Dashboardpage (){
-        return view ('dashboard');
+        return view ('landingpage');
     }
 }
